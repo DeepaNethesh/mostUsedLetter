@@ -12,28 +12,6 @@ let sentence = document.querySelector('#sentence');
 const favourite = document.querySelector('#favourite');
 const button1= document.querySelector('#submit')
 
-// const getLetter = (string) => {
-//     let max = 0;
-//     let value;
-//      let maxChar = '';
-//      let letters = [];
-//      let str = string.split(" ")
-//      console.log(str.length)
-//      for(let i=0; i<str.length; i++) {
-        
-//          value = str[i].split('')
-//          letters.push(value)
-     
-//     }
-//     console.log(letters)
-//     letters.forEach(function(char){
-//         if(string.split(char).length > max) {
-//             max = string.split(char).length;
-//             maxChar = char;
-//          }
-//       });
-//       return maxChar;
-// }
 const getLetter = (str) => {
     let max = 0;
     let maxNum = '';
