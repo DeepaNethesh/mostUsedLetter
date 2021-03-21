@@ -15,13 +15,19 @@ const button1= document.querySelector('#submit')
 const getLetter = (str) => {
     let max = 0;
     let maxNum = '';
+    console.log(str.split(''))
      str.split('').forEach(function(char){
        if(str.split(char).length > max) {
            max = str.split(char).length;
            maxNum = char;
-        }
+           
+       }
+         
      });
-     return maxNum;
+     console.log(maxNum)
+     console.log(max)
+     return `${maxNum} and count is ${max-1}`;
+     
    };
 
 submit.addEventListener('click', (event) => {
