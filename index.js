@@ -15,9 +15,16 @@ const button1= document.querySelector('#submit')
 const getLetter = (str) => {
     let max = 0;
     let maxNum = '';
-    console.log(str.split(''))
+ str = str.split(' ').join('')
+ str.split('').join()
+ 
+      
+
      str.split('').forEach(function(char){
-       if(str.split(char).length > max) {
+       console.log(char)
+       console.log(str.split(char).length-1)
+      //  console.log(max)
+       if(str.split(char).length > max && str.split() !== ' ') {
            max = str.split(char).length;
            maxNum = char;
            
